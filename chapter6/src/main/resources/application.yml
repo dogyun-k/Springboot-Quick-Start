@@ -1,0 +1,40 @@
+server:
+    port: 8080
+
+spring:
+    # Datasource Setting
+    datasource:
+        driver-class-name: org.h2.Driver
+        url: jdbc:h2:tcp://localhost/~/test
+        username: sa
+        password: 
+
+    # JPA Setting
+    jpa:
+        hibernate:
+            ddl-auto: update
+        
+        generate-ddl: false
+        show-sql: true
+        database-platform: org.hibernate.dialect.H2Dialect
+        properties:
+            hibernate:
+                format_sql: true
+    
+    # ViewResolver Setting
+    mvc:
+        view:
+            prefix: /WEB-INF/board/
+            suffix: .jsp
+
+    # Thymeleaf Cache Setting
+    thymeleaf:
+        cache: false
+
+
+# Logging Setting
+logging:
+    level:
+        org:
+            hibernate: info
+

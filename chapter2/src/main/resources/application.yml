@@ -1,0 +1,19 @@
+
+spring:
+    main:
+        allow-bean-definition-overriding: true
+
+
+board:
+    jdbc:
+        # Datasource : Oracle
+        # driverClass: oracle.jdbc.driver.OracleDriver
+        # url: jdbc:oracle:thin:@localhost:1521:xe
+        # username: dogyun
+        # password: 1234
+
+        # Datasource : H2
+        driverClass: org.h2.Driver
+        url: jdbc:oracle:thin://localhost/~/test
+        username: dogyun
+        password: 1234

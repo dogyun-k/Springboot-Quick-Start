@@ -1,0 +1,18 @@
+spring:
+    main:
+        web-application-type: servlet
+
+server:
+    port: 8080
+
+author:
+    name: TESTER
+    age: 53
+    nation: Korea
+
+logging:
+    level:
+        com:
+            dogyun: warn
+#     file:
+#         name: src/main/resources/board_log.log
