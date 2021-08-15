@@ -1,0 +1,50 @@
+
+spring:
+    
+    ##################
+    # Business Layer #
+    ##################
+
+    # WebApplication Type Setting
+    main:
+        web-application-type: servlet
+
+    # DataSource Setting
+    datasource:
+        driver-class-name: org.h2.Driver
+        url: jdbc:h2:tcp://localhost/~/test
+        username: sa
+        password: 
+
+    # JPA Setting
+    jpa:
+        hibernate:
+            ddl-auto: create
+        
+        generate-ddl: false
+        show-sql: true
+        database-platform: org.hibernate.dialect.H2Dialect
+        properties:
+            hibernate:
+                format_sql: true
+
+
+    ######################
+    # Presentation Layer #
+    ######################
+
+    # Thymeleaf Cache Setting
+    thymeleaf:
+        cache: false
+
+
+# Logging Setting
+logging:
+    level:
+        org:
+            hibernate: info
+
+            springframeword:
+                web: debug
+                security: debug
+
